@@ -19,8 +19,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             padding: EdgeInsets.symmetric(horizontal: 20),
             child: Icon(Icons.shopping_bag_outlined),
           ),
-          
         ],
+      ),
+      drawer: Drawer(
+        child: DrawerHeader(child: Text('Login')),
       ),
     );
   }
