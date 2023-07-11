@@ -14,13 +14,16 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     final height = MediaQuery.of(context).size.height * 1;
     final width = MediaQuery.of(context).size.width * 1;
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: MyColors.navy,
-        actions: const [
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20),
-            child: Icon(Icons.shopping_bag_outlined),
-          ),
+      body: const CustomScrollView(
+        slivers: [
+          SliverAppBar(
+            actions: [
+              Icon(Icons.shopping_bag_outlined),
+            ],
+            expandedHeight: 60,
+            floating: false,
+            pinned: true,
+          )
         ],
       ),
       drawer: const Drawer(
