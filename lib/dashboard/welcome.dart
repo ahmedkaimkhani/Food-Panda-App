@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:food_panda_app/constats/color.dart';
 import 'package:food_panda_app/constats/constants.dart';
@@ -19,7 +20,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
         backgroundColor: MyColors.navy,
         elevation: 0,
         centerTitle: false,
-        title: Text('Karachi Pakistan', style: TextStyle(fontFamily: bold,),),
+        title: Text('Karachi Pakistan', style: TextStyle(fontFamily: bold),),
         actions: const [
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 20),
@@ -34,6 +35,27 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             color: MyColors.navy
           ),
           ),
+      ),
+      body: Column(
+        children: [
+          Container(
+            child: Expanded(
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 18),
+                child: CupertinoTextField(
+                  prefix: Padding(
+                    padding: const EdgeInsets.only(left: 10),
+                    child: Icon(Icons.search_outlined),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+                  placeholder: 'Search shop & resturants',
+                ),
+              ),
+            ),
+            height: 80,
+            color: MyColors.navy,
+          )
+        ],
       ),
     );
   }
