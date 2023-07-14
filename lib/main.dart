@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_panda_app/constats/color.dart';
 import 'package:food_panda_app/constats/constants.dart';
-import 'package:food_panda_app/dashboard/welcome.dart';
 import 'package:food_panda_app/splash%20screen/splash_screen.dart';
 
 void main() {

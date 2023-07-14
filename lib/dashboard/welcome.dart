@@ -118,7 +118,45 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ],
         ),
       ),
-      body: const SingleChildScrollView(),
+      body:  SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+            Expanded(
+              flex: 1,
+              child: Padding(
+                padding: const EdgeInsets.only(top: 12, right: 4, left: 12,),
+                child: Container(
+                  height: height * .18,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: MyColors.primaryColor,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Padding(
+                padding: const EdgeInsets.only(top: 12, right: 12, left: 4,),
+                child: Container(
+                  height: height * .18,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: MyColors.primaryColor,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                ),
+              ),
+            ),
+              ]
+            )
+          ],
+        ),
+      ),
     );
   }
 }
