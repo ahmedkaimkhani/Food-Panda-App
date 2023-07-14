@@ -17,18 +17,29 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     final width = MediaQuery.of(context).size.width * 1;
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Karachi'),
+        title: const Text('Karachi',style: TextStyle(fontSize: 18),),
         bottom: PreferredSize(
-        preferredSize: Size.fromHeight(40),
+        preferredSize: const Size.fromHeight(47),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           child: Row(
             children: [
               Expanded(
                 child: CupertinoTextField(
+                  padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
                   placeholder: 'Search shop & resturant',
+                  prefix: const Padding(
+                    padding: EdgeInsets.only(left: 10),
+                    child: Icon(Icons.search_outlined, color: Color(0xff7b7b7b),),
+                  ),
+                  style: const TextStyle(color: Color(0xff707070),
+                  fontSize: 15, fontFamily: regular),
+                  decoration: BoxDecoration(
+                    color: const Color(0xfff7f7f7),
+                    borderRadius: BorderRadius.circular(50)
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ),
