@@ -16,7 +16,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     final height = MediaQuery.of(context).size.height * 1;
     final width = MediaQuery.of(context).size.width * 1;
     return Scaffold(
-      backgroundColor: Color(0xffeef2f5),
+      backgroundColor: const Color(0xffeef2f5),
       appBar: AppBar(
         title: const Text(
           'Karachi',
@@ -232,12 +232,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                 ),
               ),
-            Column(
-              children: [
-                const SizedBox(height: 10),
-                Row(
-                  children: [
-                Expanded(
+            ]),
+            Row(children: [
+              Expanded(
                 flex: 1,
                 child: Padding(
                   padding: const EdgeInsets.only(
@@ -248,7 +245,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Container(
-                      height: height * .18,
+                      height: height * .10,
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: MyColors.primaryColor,
@@ -257,9 +254,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       child: Stack(
                         children: [
                           Image.asset(
-                            'images/biyani.jpg',
-                            fit: BoxFit.fitWidth,
-                            width: double.infinity,
+                            'images/shopping.jpg',
+                            fit: BoxFit.fitHeight,
+                            height: double.infinity,
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -268,13 +265,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
                                 Text(
-                                  'Food delivery',
+                                  'Pick-up',
                                   style:
                                       TextStyle(fontFamily: bold, fontSize: 20),
                                 ),
-                                SizedBox(height: 5),
+                                SizedBox(height: 7),
                                 Text(
-                                  'Order from youe\nfavourite restaurants ...',
+                                  'Enjoy up to\n50% off and ...',
                                   style: TextStyle(
                                       fontFamily: medium, fontSize: 12),
                                 ),
@@ -292,13 +289,13 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: Padding(
                   padding: const EdgeInsets.only(
                     top: 12,
-                    right: 4,
-                    left: 12,
+                    right: 12,
+                    left: 4,
                   ),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10),
                     child: Container(
-                      height: height * .18,
+                      height: height * .10,
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: MyColors.primaryColor,
@@ -307,9 +304,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                       child: Stack(
                         children: [
                           Image.asset(
-                            'images/biyani.jpg',
-                            fit: BoxFit.fitWidth,
-                            width: double.infinity,
+                            'images/nodels.jpg',
+                            fit: BoxFit.fitHeight,
+                            height: double.infinity,
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -318,13 +315,67 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: const [
                                 Text(
-                                  'Food delivery',
+                                  'Dine-in',
                                   style:
                                       TextStyle(fontFamily: bold, fontSize: 20),
                                 ),
-                                SizedBox(height: 5),
+                                SizedBox(height: 7),
                                 Text(
-                                  'Order from youe\nfavourite restaurants ...',
+                                  'Eat out and\nsave 20%',
+                                  style:
+                                      TextStyle(fontFamily: medium, fontSize: 12),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ]),
+            Column(
+              children: [
+                Row(children: [
+              Expanded(
+                flex: 1,
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    top: 12,
+                    right: 4,
+                    left: 12,
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Container(
+                      height: height * .10,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: MyColors.primaryColor,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'images/icecream.jpg',
+                            fit: BoxFit.fitHeight,
+                            height: double.infinity,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Catering',
+                                  style:
+                                      TextStyle(fontFamily: bold, fontSize: 20),
+                                ),
+                                SizedBox(height: 7),
+                                Text(
+                                  'For events',
                                   style: TextStyle(
                                       fontFamily: medium, fontSize: 12),
                                 ),
@@ -337,11 +388,69 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   ),
                 ),
               ),
-                  ]
+              Expanded(
+                flex: 1,
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                    top: 12,
+                    right: 12,
+                    left: 4,
+                  ),
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(10),
+                    child: Container(
+                      height: height * .10,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: MyColors.primaryColor,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
+                      child: Stack(
+                        children: [
+                          Image.asset(
+                            'images/shopping2.jpg',
+                            fit: BoxFit.fitHeight,
+                            height: double.infinity,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  'Pandago',
+                                  style:
+                                      TextStyle(fontFamily: bold, fontSize: 20),
+                                ),
+                                SizedBox(height: 7),
+                                Text(
+                                  'Parcel delivery',
+                                  style:
+                                      TextStyle(fontFamily: medium, fontSize: 12),
+                                ),
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
+              ),
+            ]),
+            const SizedBox(height: 10),
+            Column(
+              children: [
+                Container(
+                  width:50,
+                  height: 50,
+                  color: MyColors.primaryColor,
+                )
               ],
             )
-            ])
+              ],
+            )
           ],
         ),
       ),
