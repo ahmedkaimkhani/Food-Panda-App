@@ -32,8 +32,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
-          children: const [
-            DrawerHeader(
+          children:  [
+            const DrawerHeader(
                 decoration: BoxDecoration(
                   color: MyColors.primaryColor,
                 ),
@@ -42,7 +42,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   backgroundColor: Colors.white,
                 ),
                 ),
-            ListTile(
+            const ListTile(
               title: Text(
                 'Help center',
                 style: TextStyle(fontFamily: medium),
@@ -52,7 +52,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 color: MyColors.primaryColor,
               ),
             ),
-            ListTile(
+            const ListTile(
               title: Text(
                 'foodpanda for buisness',
                 style: TextStyle(fontFamily: medium),
@@ -62,7 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 color: MyColors.primaryColor,
               ),
             ),
-            ListTile(
+            const ListTile(
               title: Text(
                 'invite friends',
                 style: TextStyle(fontFamily: medium),
@@ -72,6 +72,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 color: MyColors.primaryColor,
               ),
             ),
+            const Divider(color: Colors.grey, thickness: 1,),
             ListTile(
               title: Text(
                 'Settings',
