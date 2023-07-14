@@ -27,18 +27,19 @@ class MyApp extends StatelessWidget {
                 TextStyle(fontFamily: bold, color: Color(0xfffcfcfc)),
             //iconTheme: IconThemeData(color: MyColors.primaryColor)
           )),
-      darkTheme: ThemeData(
-          primarySwatch: MyColors.navy,
-          brightness: Brightness.dark,
-          scaffoldBackgroundColor: const Color(0xfffcfcfc),
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.white,
-            elevation: 2,
-            titleTextStyle:
-                TextStyle(fontFamily: bold, color: Color(0xfffcfcfc)),
-            //iconTheme: IconThemeData(color: MyColors.primaryColor)
-          )),
-      home: SplashScreen(),
+      // darkTheme: ThemeData(
+      //     primarySwatch: MyColors.navy,
+      //     brightness: Brightness.dark,
+      //     scaffoldBackgroundColor: const Color(0xfffcfcfc),
+      //     appBarTheme: const AppBarTheme(
+      //       backgroundColor: Colors.white,
+      //       elevation: 2,
+      //       titleTextStyle:
+      //           TextStyle(fontFamily: bold, color: Color(0xfffcfcfc)),
+      //       //iconTheme: IconThemeData(color: MyColors.primaryColor)
+      //     )
+      //     ),
+      home: const SplashScreen(),
     );
   }
 }

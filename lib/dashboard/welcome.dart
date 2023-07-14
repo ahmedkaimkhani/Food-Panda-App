@@ -18,6 +18,21 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Karachi'),
+        bottom: PreferredSize(
+        preferredSize: Size.fromHeight(40),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+          child: Row(
+            children: [
+              Expanded(
+                child: CupertinoTextField(
+                  placeholder: 'Search shop & resturant',
+                ),
+              )
+            ],
+          ),
+        ),
+        ),
         backgroundColor: MyColors.navy,
         actions: const [
           Padding(
@@ -92,6 +107,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ],
         ),
       ),
+      body: const SingleChildScrollView(),
     );
   }
 }
