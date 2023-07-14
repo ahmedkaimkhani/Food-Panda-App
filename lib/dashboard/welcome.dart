@@ -39,7 +39,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               ),
               child: CircleAvatar(
                 radius: 24,
-                backgroundImage: AssetImage(''),
+                backgroundImage: AssetImage('images/ahmed.jpg'),
                  //backgroundColor: Colors.white,
               ),
             ),
