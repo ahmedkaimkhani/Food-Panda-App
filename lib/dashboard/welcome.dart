@@ -130,6 +130,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisSize: MainAxisSize.max,
           children: [
             Row(children: [
               Expanded(
@@ -220,8 +222,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                 SizedBox(height: 5),
                                 Text(
                                   'Everyday essentials',
-                                  style:
-                                      TextStyle(fontFamily: medium, fontSize: 12),
+                                  style: TextStyle(
+                                      fontFamily: medium, fontSize: 12),
                                 ),
                               ],
                             ),
@@ -257,6 +259,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             'images/shopping.jpg',
                             fit: BoxFit.fitHeight,
                             height: double.infinity,
+                            width: double.infinity,
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -307,6 +310,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             'images/nodels.jpg',
                             fit: BoxFit.fitHeight,
                             height: double.infinity,
+                            width: double.infinity,
                           ),
                           Padding(
                             padding: const EdgeInsets.all(8.0),
@@ -322,8 +326,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                                 SizedBox(height: 7),
                                 Text(
                                   'Eat out and\nsave 20%',
-                                  style:
-                                      TextStyle(fontFamily: medium, fontSize: 12),
+                                  style: TextStyle(
+                                      fontFamily: medium, fontSize: 12),
                                 ),
                               ],
                             ),
@@ -338,119 +342,112 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             Column(
               children: [
                 Row(children: [
-              Expanded(
-                flex: 1,
-                child: Padding(
-                  padding: const EdgeInsets.only(
-                    top: 12,
-                    right: 4,
-                    left: 12,
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Container(
-                      height: height * .10,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: MyColors.primaryColor,
-                        borderRadius: BorderRadius.circular(15),
+                  Expanded(
+                    flex: 1,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        top: 12,
+                        right: 4,
+                        left: 12,
                       ),
-                      child: Stack(
-                        children: [
-                          Image.asset(
-                            'images/icecream.jpg',
-                            fit: BoxFit.fitHeight,
-                            height: double.infinity,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Container(
+                          height: height * .10,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: MyColors.primaryColor,
+                            borderRadius: BorderRadius.circular(15),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  'Catering',
-                                  style:
-                                      TextStyle(fontFamily: bold, fontSize: 20),
+                          child: Stack(
+                            children: [
+                              Image.asset(
+                                'images/icecream.jpg',
+                                fit: BoxFit.fitHeight,
+                                height: double.infinity,
+                                width: double.infinity,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: const [
+                                    Text(
+                                      'Catering',
+                                      style: TextStyle(
+                                          fontFamily: bold, fontSize: 20),
+                                    ),
+                                    SizedBox(height: 7),
+                                    Text(
+                                      'For events',
+                                      style: TextStyle(
+                                          fontFamily: medium, fontSize: 12),
+                                    ),
+                                  ],
                                 ),
-                                SizedBox(height: 7),
-                                Text(
-                                  'For events',
-                                  style: TextStyle(
-                                      fontFamily: medium, fontSize: 12),
-                                ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ),
-              Expanded(
-                flex: 1,
-                child: Padding(
-                  padding: const EdgeInsets.only(
-                    top: 12,
-                    right: 12,
-                    left: 4,
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(10),
-                    child: Container(
-                      height: height * .10,
-                      width: double.infinity,
-                      decoration: BoxDecoration(
-                        color: MyColors.primaryColor,
-                        borderRadius: BorderRadius.circular(15),
+                  Expanded(
+                    flex: 1,
+                    child: Padding(
+                      padding: const EdgeInsets.only(
+                        top: 12,
+                        right: 12,
+                        left: 4,
                       ),
-                      child: Stack(
-                        children: [
-                          Image.asset(
-                            'images/shopping2.jpg',
-                            fit: BoxFit.fitHeight,
-                            height: double.infinity,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(10),
+                        child: Container(
+                          height: height * .10,
+                          width: double.infinity,
+                          decoration: BoxDecoration(
+                            color: MyColors.primaryColor,
+                            borderRadius: BorderRadius.circular(15),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: const [
-                                Text(
-                                  'Pandago',
-                                  style:
-                                      TextStyle(fontFamily: bold, fontSize: 20),
+                          child: Stack(
+                            children: [
+                              Image.asset(
+                                'images/shopping2.jpg',
+                                fit: BoxFit.fitHeight,
+                                height: double.infinity,
+                                width: double.infinity,
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: const [
+                                    Text(
+                                      'Pandago',
+                                      style: TextStyle(
+                                          fontFamily: bold, fontSize: 20),
+                                    ),
+                                    SizedBox(height: 7),
+                                    Text(
+                                      'Parcel delivery',
+                                      style: TextStyle(
+                                          fontFamily: medium, fontSize: 12),
+                                    ),
+                                  ],
                                 ),
-                                SizedBox(height: 7),
-                                Text(
-                                  'Parcel delivery',
-                                  style:
-                                      TextStyle(fontFamily: medium, fontSize: 12),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
+                              )
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ),
-            ]),
-            const SizedBox(height: 10),
-            Column(
-              children: [
-                Container(
-                  width:50,
-                  height: 50,
-                  color: MyColors.primaryColor,
-                )
+                ]),
               ],
-            )
-              ],
-            )
+            ),
+            
           ],
         ),
       ),
